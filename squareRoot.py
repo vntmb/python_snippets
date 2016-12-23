@@ -8,11 +8,10 @@ def toBRooted():
     Output: User defined number and whether it is positive or negative
     """
     try:
-        number = int(raw_input("What number do you want the square root of? "))
+        number = float(raw_input("What number do you want the square root of? "))
     except ValueError:
         print("That is not a valid input. Bye. ")
         sys.exit()
-        
     if number < 0:
         return number, "neg"
         
